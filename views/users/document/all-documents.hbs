@@ -1,0 +1,187 @@
+{{!-- <div class="add-new-contact-modal modal fade px-0" id="addnewcontact" data-bs-backdrop="static"
+    data-bs-keyboard="false" tabindex="-1" aria-labelledby="addnewcontactlabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h6 class="modal-title" id="addnewcontactlabel">Add New Project</h6>
+                    <button class="btn btn-close p-1 ms-auto me-0" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <hr style="background-color: white;">
+
+                <form action="/add-pdf" method="POST" enctype="multipart/form-data">
+                    <p>Project Details</p>
+
+                    <div class="input-group mb-3"><span class="input-group-text" id="to">Project Code | #VCP</span>
+                        <input class="form-control" type="text" name="pcode" placeholder="0001" aria-label=""
+                            aria-describedby="to">
+                    </div>
+
+                    <div class="input-group mb-3"><span class="input-group-text" id="to">Project Title</span>
+                        <input class="form-control" type="text" name="ptitle" placeholder="" aria-label=""
+                            aria-describedby="to">
+                    </div>
+
+                    <div class="input-group mb-3"><span class="input-group-text" id="to">Project Status</span>
+                        <select class="form-select" id="defaultSelect" name="pstatus"
+                            aria-label="Default select example">
+                            <option value="1" selected>Select Status</option>
+                            <option value="Pending">Pending</option>
+                            <option value="Progress">Progress</option>
+                            <option value="Completed">Completed</option>
+                            <option value="Active">Active</option>
+                            <option value="Inactive">Inactive</option>
+                            <option value="Cancelled">Cancelled</option>
+
+                        </select>
+                    </div>
+
+                    <div class="input-group mb-3"><span class="input-group-text" id="to">Project Link</span>
+                        <input class="form-control" type="text" name="plink" placeholder="" aria-label=""
+                            aria-describedby="to">
+                    </div>
+
+                    <div class="input-group mb-3"><span class="input-group-text" id="to">Project Github Repository
+                            Link</span>
+                        <input class="form-control" type="text" name="pglink" placeholder="" aria-label=""
+                            aria-describedby="to">
+                    </div>
+
+                    <div class="input-group mb-3"><span class="input-group-text" id="to">Estimate Cost ₹</span>
+                        <input class="form-control" type="text" name="pcost" placeholder="" aria-label=""
+                            aria-describedby="to">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="input-group mb-3"><span class="input-group-text" id="to">Estimate Payment
+                                    ₹</span>
+                                <input class="form-control" type="text" name="pcost" placeholder="" aria-label=""
+                                    aria-describedby="to">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="input-group mb-3"><span class="input-group-text" id="to">Date</span>
+                                <input class="form-control" type="date" name="pcost" placeholder="" aria-label=""
+                                    aria-describedby="to">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="input-group mb-3"><span class="input-group-text" id="to">Client Name</span>
+                        <input class="form-control" type="text" name="title" placeholder="" aria-label="Username"
+                            aria-describedby="to">
+                    </div>
+
+                    <div class="input-group mb-3"><span class="input-group-text" id="to">Project Category</span>
+                        <select class="form-select" id="defaultSelect" name="category"
+                            aria-label="Default select example">
+                            <option value="1" selected>Select Category</option>
+                            <option value="Document">Document</option>
+                            <option value="Pdf">Pdf</option>
+                        </select>
+                    </div>
+
+
+                    <div class="input-group mb-3"><span class="input-group-text" id="to">Upload</span>
+                        <input class="form-control" type="file" placeholder="" name="Document" aria-label=""
+                            aria-describedby="to">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea class="form-control" id="message" name="note" cols="3" rows="5"
+                            placeholder=""></textarea>
+                    </div>
+                    <button class="btn btn-primary w-100" type="submit">Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> --}}
+<div class="page-content-wrapper py-3">
+    <!-- Add New Contact-->
+
+    <div class="container-lg">
+
+        <!-- User Status Slide-->
+
+        <!-- Element Heading-->
+
+
+        <div class="card mb-2 mt-3">
+            <div class="card-body p-2">
+                <div class="d-flex align-items-center justify-content-between"> <a href="/">
+                        <i class="bi bi-arrow-left-circle text-white h3 align-middle mt-2 ms-3"></i>
+                    </a>
+                    <center>
+                        <h5 style="margin-left: 83px;">My Documents</h5>
+                    </center>
+                    <a href="/add-document" class="btn btn-primary">
+                        <i class="bi bi-plus-circle align-middle"></i> Add New Document
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            ::-webkit-scrollbar-thumb {
+                background-color: #fff;
+                margin-top: 10px;
+                /* Color of the scrollbar thumb (the draggable part) */
+            }
+
+            ::-webkit-scrollbar-track {
+                margin-top: 10px;
+
+                background-color: #272727;
+                /* Color of the scrollbar track (the non-draggable part) */
+            }
+
+            .card1 {
+                background-color: #7a3232;
+            }
+
+            [data-theme='dark'] body .card1 {
+                background-color: #121212;
+            }
+        </style>
+
+        <div class="row mt-3 ">
+
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body p-5">
+                        <div class="row g-3">
+                            {{#each documents}}
+                            <!-- Single Top Product Card -->
+                            <div class="col-6 col-sm-4 col-lg-3">
+                                <div class="card single-product-card card1">
+                                    <div class="card-body p-3">
+                                        <!-- Product Thumbnail --><a class="product-thumbnail d-block"
+                                            href="/images/document-docs/{{this._id}}.pdf"><img
+                                                src="/images/document-images/{{this._id}}.png" alt="">
+                                            <!-- Badge --><span class="badge bg-warning">{{this.category}}</span></a>
+                                        <!-- Product Title --><a class="product-title d-block text-truncate"
+                                            href="/images/document-docs/{{this._id}}.pdf">{{this.name}}</a>
+                                        <!-- Product Price -->
+                                        <a class="btn btn-danger btn-sm mt-3"
+                                            href="/images/document-docs/{{this._id}}.pdf">
+                                            View Document</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>

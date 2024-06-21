@@ -1,0 +1,64 @@
+<br>
+
+<div class="container mt-5">
+
+    <div class="card mb-2 mt-3">
+        <div class="card-body p-2">
+            <div class="d-flex align-items-center justify-content-between"> <a href="/all-documents">
+                    <i class="bi bi-arrow-left-circle text-white h3 align-middle mt-2 ms-3"></i>
+                </a>
+                <center>
+                    <h5 style="margin-right: 30px;">Add New Document</h5>
+                </center>
+
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <form action="/add-document" method="POST" enctype="multipart/form-data">
+
+                <div class="input-group mb-3"><span class="input-group-text" id="to">Project Title</span>
+                    <input class="form-control" type="text" name="name" placeholder="" required>
+                </div>
+
+                <div class="input-group mb-3"><span class="input-group-text" id="to">Project Description</span>
+                    <input class="form-control" type="text" name="desc" placeholder="">
+                </div>
+
+
+
+                <div class="input-group mb-3"><span class="input-group-text" id="to">Document Link</span>
+                    <input class="form-control" type="text" name="link" placeholder="">
+                </div>
+
+                <div class="input-group mb-3"><span class="input-group-text" id="to">Document Category</span>
+                    <select class="form-select" id="defaultSelect" name="category" aria-label="Default select example">
+                        <option value="" disabled selected>Select Category</option>
+                        <option value="College/School Document">College/School Document</option>
+                        <option value="Personal Document">Personal Document</option>
+                        <option value="Other">Other</option>
+
+
+                    </select>
+                </div>
+
+
+                <div class="input-group mb-3"><span class="input-group-text" id="to">Upload Document</span>
+                    <input class="form-control" type="file" placeholder="" name="Image1">
+                </div>
+
+                <hr>
+
+                <div class="input-group mb-3"><span class="input-group-text" id="to">Upload Icon / Image</span>
+                    <input class="form-control" type="file" placeholder="" name="Image2">
+                </div>
+
+
+
+
+                <button class="btn btn-primary w-100" type="submit">Add</button>
+            </form>
+        </div>
+    </div>
+</div>
